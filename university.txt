@@ -42,7 +42,17 @@ FROM `teachers`
 WHERE `phone` IS NULL;
 
 9.
+INSERT INTO `students` (`degree_id`, `name`, `surname`, `date_of_birth`, `fiscal_code`, `enrolment_date`, `registration_number`, `email`)
+VALUES ( 1, 'Luca', 'Martinetti', '1999-02-19', 'MRTLCU99BF205E', '2025-02-03', 9999600, 'luca.martinetti@outlook.it');
 
+10.
+UPDATE `teachers`
+SET `office_number` = 126
+WHERE `id` = 58;
+
+11.
+DELETE FROM `students` 
+WHERE `id` = 5003;
 
 Query con GROUP BY
 
